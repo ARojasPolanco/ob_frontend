@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "nameShops": "Don Carlos",
+    "category": "Carnicería",
+    "product": "Bola de Lomo",
+    "images": ["../../../public/images/bola-de-lomo.jpg"],
+    "price": 8.9,
+    "star": 4,
+    "discount": "15%",
+    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+  },
+  {
+    "id": "2",
+    "nameShops": "Las Nenas",
+    "category": "Carnicería",
+    "product": "Peceto",
+    "images": ["../../../public/images/peceto_5.jpg"],
+    "price": 9.9,
+    "star": 5,
+    "discount": "10%",
+    "description": "Peceto de vaca, excelente y tierno corte para milanesas"
+  },
+  {
+    "id": "3",
+    "nameShops": "Frigorífico 25 de Mayo",
+    "category": "Carnicería",
+    "product": "Vacío",
+    "images": ["../../../public/images/vacio_2.jpg"],
+    "price": 8.6,
+    "star": 4,
+    "discount": "10%",
+    "description": "Excelente corte de Vacío de Vaca, ideal para una buena parrillada con amigos"
+  },
+  {
+    "id": "4",
+    "nameShops": "Lo de Pablo",
+    "category": "Carnicería",
+    "product": "Bola de Lomo",
+    "images": ["../../../public/images/bola-de-lomo.jpg"],
+    "price": 9.9,
+    "star": 3,
+    "discount": "15%",
+    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+  }
+]

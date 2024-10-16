@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #EDF3FF, #D6EFFF)',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
