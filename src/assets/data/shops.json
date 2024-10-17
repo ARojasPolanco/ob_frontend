@@ -4,7 +4,9 @@
     "nameShops": "Don Carlos",
     "category": "Carnicería",
     "product": "Bola de Lomo",
-    "images": ["/assets/images/bola-de-lomo.jpg"],
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/bola-de-lomo_bwyh5y.jpg"
+    ],
     "price": 8.9,
     "star": 4,
     "discount": "15%",
@@ -15,7 +17,9 @@
     "nameShops": "Las Nenas",
     "category": "Carnicería",
     "product": "Peceto",
-    "images": ["/assets/images/peceto_5.jpg"],
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/peceto_5_phtpdv.jpg"
+    ],
     "price": 9.9,
     "star": 5,
     "discount": "10%",
@@ -26,7 +30,9 @@
     "nameShops": "Frigorífico 25 de Mayo",
     "category": "Carnicería",
     "product": "Vacío",
-    "images": ["/assets/images/vacio_2.jpg"],
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/vacio_2_jrnn9c.jpg"
+    ],
     "price": 8.6,
     "star": 4,
     "discount": "10%",
@@ -37,10 +43,25 @@
     "nameShops": "Lo de Pablo",
     "category": "Carnicería",
     "product": "Bola de Lomo",
-    "images": ["/assets/images/bola-de-lomo.jpg"],
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/bola-de-lomo_bwyh5y.jpg"
+    ],
     "price": 9.9,
     "star": 3,
     "discount": "15%",
     "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+  },
+  {
+    "id": "5",
+    "nameShops": "Al Divino Malbec",
+    "category": "Vinoteca",
+    "product": "Blend de Malbec Mosquita Muerta",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173115/mosquita_xiwqnd.jpg"
+    ],
+    "price": 12.9,
+    "star": 5,
+    "discount": "5%",
+    "description": "Excelente blend de malbec, un vino excepcional para compartir en una mesa"
   }
 ]
