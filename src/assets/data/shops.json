@@ -63,5 +63,57 @@
     "star": 5,
     "discount": "5%",
     "description": "Excelente blend de malbec, un vino excepcional para compartir en una mesa"
+  },
+  {
+    "id": "6",
+    "nameShops": "Don Carlos",
+    "category": "Carnicería",
+    "product": "Bondiola de Cerdo",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174050/bondiola_2_zabz9z.jpg"
+    ],
+    "price": 6.9,
+    "star": 3,
+    "discount": "5%",
+    "description": "Bondiola de cerdo, gran corte para la parrilla o disfrutar en el horno"
+  },
+  {
+    "id": "7",
+    "nameShops": "Don Carlos",
+    "category": "Carnicería",
+    "product": "Tapa de Asado",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174210/tapa-de-asado_llivjo.jpg"
+    ],
+    "price": 7.8,
+    "star": 3,
+    "discount": "5%",
+    "description": "Tapa de asado, gran corte para la parrilla o disfrutar en el horno"
+  },
+  {
+    "id": "8",
+    "nameShops": "Pan y Queso",
+    "category": "Despensa",
+    "product": "Coca Cola 2.5 Retornable",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174371/coca-25retornable_cz9kr8.jpg"
+    ],
+    "price": 3.4,
+    "star": 3,
+    "discount": "5%",
+    "description": "Lleva a tu mesa, para compartir en familia, la nueva coca cola retornable de 2.5lts"
+  },
+  {
+    "id": "9",
+    "nameShops": "Pan y Queso",
+    "category": "Despensa",
+    "product": "Fernet Branca 750",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174769/Branca_botella_3_ee09sn.jpg"
+    ],
+    "price": 8.1,
+    "star": 4,
+    "discount": "10%",
+    "description": "Para tus mejores eventos y reuniones, Fernet Branca 750ml"
   }
 ]

@@ -15,8 +15,8 @@ const Card = ({ shop }) => {
   const discountedPrice = (price * (1 - parseFloat(discount) / 100)).toFixed(3);
 
   return (
-    <div className="bg-white shadow-md rounded-xl p-4 min-w-[280px] max-w-xs pb-6">
-      {/* Header: Tienda y categoría */}
+    <div className="bg-white shadow-md rounded-xl p-4 min-w-[280px] max-w-xs pb-6 relative">
+      {" "}
       <div className="flex items-center mb-3">
         <div className="w-12 h-12 rounded-full bg-blue-gradient text-white flex items-center justify-center text-lg font-semibold">
           {nameShops.charAt(0)}
@@ -30,14 +30,12 @@ const Card = ({ shop }) => {
           </p>
         </div>
       </div>
-
       {/* Imagen */}
       <img
         src={images[0]}
         alt={product}
         className="w-full h-44 object-cover mb-3"
       />
-
       {/* Título del producto, rating y comentarios */}
       <div className="flex justify-between items-center mb-3">
         <h4 className="font-bold text-[16px] text-gray-800">{product}</h4>
@@ -50,19 +48,19 @@ const Card = ({ shop }) => {
           </span>
         </div>
       </div>
-
       {/* Descripción del producto */}
-      <p className="text-gray-500 text-sm mb-3 line-clamp-2 font-poppins">
+      <p className="text-gray-500 text-sm mb-3 line-clamp-4 font-poppins">
         {description}
       </p>
-
       {/* Precio y descuento */}
-      <div className="flex justify-between items-center font-poppins">
+      <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center font-poppins">
+        {" "}
+        {/* Posicionamiento absoluto */}
         <div className="bg-blue-gradient text-white p-1 px-3 rounded-lg text-xl font-bold">
           ${discountedPrice}
         </div>
         <div className="flex items-center space-x-2 text-sm">
-          <span className="text-orange-500 font-bold">{discount} OFF</span>
+          <span className="text-orange-500 font-bold">{discount}% OFF</span>
           <span className="line-through text-sm font-semibold text-gray-400">
             ${price}00
           </span>
