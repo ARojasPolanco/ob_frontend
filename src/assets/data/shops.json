@@ -1,0 +1,119 @@
+[
+  {
+    "id": "1",
+    "nameShops": "Don Carlos",
+    "category": "Carnicería",
+    "product": "Bola de Lomo",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/bola-de-lomo_bwyh5y.jpg"
+    ],
+    "price": 8.9,
+    "star": 4,
+    "discount": "15%",
+    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+  },
+  {
+    "id": "2",
+    "nameShops": "Las Nenas",
+    "category": "Carnicería",
+    "product": "Peceto",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/peceto_5_phtpdv.jpg"
+    ],
+    "price": 9.9,
+    "star": 5,
+    "discount": "10%",
+    "description": "Peceto de vaca, excelente y tierno corte para milanesas"
+  },
+  {
+    "id": "3",
+    "nameShops": "Frigorífico 25 de Mayo",
+    "category": "Carnicería",
+    "product": "Vacío",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/vacio_2_jrnn9c.jpg"
+    ],
+    "price": 8.6,
+    "star": 4,
+    "discount": "10%",
+    "description": "Excelente corte de Vacío de Vaca, ideal para una buena parrillada con amigos"
+  },
+  {
+    "id": "4",
+    "nameShops": "Lo de Pablo",
+    "category": "Carnicería",
+    "product": "Bola de Lomo",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/bola-de-lomo_bwyh5y.jpg"
+    ],
+    "price": 9.9,
+    "star": 3,
+    "discount": "15%",
+    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+  },
+  {
+    "id": "5",
+    "nameShops": "Al Divino Malbec",
+    "category": "Vinoteca",
+    "product": "Blend de Malbec Mosquita Muerta",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173115/mosquita_xiwqnd.jpg"
+    ],
+    "price": 12.9,
+    "star": 5,
+    "discount": "5%",
+    "description": "Excelente blend de malbec, un vino excepcional para compartir en una mesa"
+  },
+  {
+    "id": "6",
+    "nameShops": "Don Carlos",
+    "category": "Carnicería",
+    "product": "Bondiola de Cerdo",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174050/bondiola_2_zabz9z.jpg"
+    ],
+    "price": 6.9,
+    "star": 3,
+    "discount": "5%",
+    "description": "Bondiola de cerdo, gran corte para la parrilla o disfrutar en el horno"
+  },
+  {
+    "id": "7",
+    "nameShops": "Don Carlos",
+    "category": "Carnicería",
+    "product": "Tapa de Asado",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174210/tapa-de-asado_llivjo.jpg"
+    ],
+    "price": 7.8,
+    "star": 3,
+    "discount": "5%",
+    "description": "Tapa de asado, gran corte para la parrilla o disfrutar en el horno"
+  },
+  {
+    "id": "8",
+    "nameShops": "Pan y Queso",
+    "category": "Despensa",
+    "product": "Coca Cola 2.5 Retornable",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174371/coca-25retornable_cz9kr8.jpg"
+    ],
+    "price": 3.4,
+    "star": 3,
+    "discount": "5%",
+    "description": "Lleva a tu mesa, para compartir en familia, la nueva coca cola retornable de 2.5lts"
+  },
+  {
+    "id": "9",
+    "nameShops": "Pan y Queso",
+    "category": "Despensa",
+    "product": "Fernet Branca 750",
+    "images": [
+      "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174769/Branca_botella_3_ee09sn.jpg"
+    ],
+    "price": 8.1,
+    "star": 4,
+    "discount": "10%",
+    "description": "Para tus mejores eventos y reuniones, Fernet Branca 750ml"
+  }
+]
