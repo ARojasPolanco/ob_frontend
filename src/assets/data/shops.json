@@ -1,119 +1,281 @@
 [
   {
     "id": "1",
-    "nameShops": "Don Carlos",
+    "nameShops": "Total Carnes",
     "category": "Carnicería",
+    "address": "Altos de Palihue, Hipólito Yrigoyen 3884, B8000 Bahía Blanca, Provincia de Buenos Aires",
     "product": "Bola de Lomo",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/bola-de-lomo_bwyh5y.jpg"
     ],
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186987/total-carnes-dir_lnokh3.png",
     "price": 8.9,
     "star": 4,
     "discount": "15%",
-    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": [
+      "(291)-1112345",
+      "contacto@total-carnes.com.ar",
+      "@carniceriatotalcarneok"
+    ]
   },
   {
     "id": "2",
-    "nameShops": "Las Nenas",
+    "nameShops": "Los Mellis",
     "category": "Carnicería",
+    "address": "B8000 Bahía Blanca, Provincia de Buenos Aires",
     "product": "Peceto",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/peceto_5_phtpdv.jpg"
     ],
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186986/los-melli-dir_vhashf.png",
     "price": 9.9,
     "star": 5,
     "discount": "10%",
-    "description": "Peceto de vaca, excelente y tierno corte para milanesas"
+    "description": "Peceto de vaca, excelente y tierno corte para milanesas",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": ["(291)-1112337", "contacto@losmellis.com.ar", "@losmellisok"]
   },
   {
     "id": "3",
-    "nameShops": "Frigorífico 25 de Mayo",
+    "nameShops": "La Italo Argentina",
     "category": "Carnicería",
+    "address": "Ecuador 2330, B8000 Bahía Blanca, Provincia de Buenos Aires",
     "product": "Vacío",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/vacio_2_jrnn9c.jpg"
     ],
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186985/la-italo-arg-dir_kemnwo.png",
     "price": 8.6,
     "star": 4,
     "discount": "10%",
-    "description": "Excelente corte de Vacío de Vaca, ideal para una buena parrillada con amigos"
+    "description": "Excelente corte de Vacío de Vaca, ideal para una buena parrillada con amigos",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": ["(291)-1112345", "info@italo-arg.com.ar", "@laitaloargentinaok"]
   },
   {
     "id": "4",
-    "nameShops": "Lo de Pablo",
+    "nameShops": "Los Cuñados",
     "category": "Carnicería",
+    "address": "Brown 42, B8000 Bahía Blanca, Provincia de Buenos Aires",
     "product": "Bola de Lomo",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173099/bola-de-lomo_bwyh5y.jpg"
     ],
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186984/los-cuniados-dir_xeso46.png",
     "price": 9.9,
     "star": 3,
     "discount": "15%",
-    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas"
+    "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": ["(291)-1112345", "info@loscuniados.com", "@loscuniadosok"]
   },
   {
     "id": "5",
     "nameShops": "Al Divino Malbec",
     "category": "Vinoteca",
+    "address": "",
     "product": "Blend de Malbec Mosquita Muerta",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173115/mosquita_xiwqnd.jpg"
     ],
+    "imageMap": "",
     "price": 12.9,
     "star": 5,
     "discount": "5%",
-    "description": "Excelente blend de malbec, un vino excepcional para compartir en una mesa"
+    "description": "Excelente blend de malbec, un vino excepcional para compartir en una mesa",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": ["(291)-1112345", "contacto@aldivinomalbec.com", "@aldivino_ok"]
   },
   {
     "id": "6",
-    "nameShops": "Don Carlos",
+    "nameShops": "CBYB",
     "category": "Carnicería",
+    "address": "Francisca Hernández 1790, B8000 Bahía Blanca, Provincia de Buenos Aires",
     "product": "Bondiola de Cerdo",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174050/bondiola_2_zabz9z.jpg"
     ],
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186983/cbyb-dir_tjsm9u.png",
     "price": 6.9,
     "star": 3,
     "discount": "5%",
-    "description": "Bondiola de cerdo, gran corte para la parrilla o disfrutar en el horno"
+    "description": "Bondiola de cerdo, gran corte para la parrilla o disfrutar en el horno",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": ["(291)-1112345", "contacto@cbyb.com.ar", "@carniceriacbyb"]
   },
   {
     "id": "7",
-    "nameShops": "Don Carlos",
+    "nameShops": "CBYB",
     "category": "Carnicería",
+    "address": "Francisca Hernández 1790, B8000 Bahía Blanca, Provincia de Buenos Aires",
     "product": "Tapa de Asado",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174210/tapa-de-asado_llivjo.jpg"
     ],
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186983/cbyb-dir_tjsm9u.png",
     "price": 7.8,
     "star": 3,
     "discount": "5%",
-    "description": "Tapa de asado, gran corte para la parrilla o disfrutar en el horno"
+    "description": "Tapa de asado, gran corte para la parrilla o disfrutar en el horno",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": [
+      "MercadoPago",
+      "Efectivo",
+      "Transferencia",
+      "Débito",
+      "Crédito"
+    ],
+    "contact": ["(291)-1112345", "contacto@cbyb.com.ar", "@carniceriacbyb"]
   },
   {
     "id": "8",
     "nameShops": "Pan y Queso",
     "category": "Despensa",
+    "address": "",
     "product": "Coca Cola 2.5 Retornable",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174371/coca-25retornable_cz9kr8.jpg"
     ],
+    "imageMap": "",
     "price": 3.4,
     "star": 3,
     "discount": "5%",
-    "description": "Lleva a tu mesa, para compartir en familia, la nueva coca cola retornable de 2.5lts"
+    "description": "Lleva a tu mesa, para compartir en familia, la nueva coca cola retornable de 2.5lts",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": ["MercadoPago", "Efectivo", "Transferencia", "Débito"],
+    "contact": [
+      "(291)-1112345",
+      "contacto@pyqdespensa.com.ar",
+      "@pyqdespensa_ok"
+    ]
   },
   {
     "id": "9",
     "nameShops": "Pan y Queso",
     "category": "Despensa",
+    "address": "",
     "product": "Fernet Branca 750",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174769/Branca_botella_3_ee09sn.jpg"
     ],
+    "imageMap": "",
     "price": 8.1,
     "star": 4,
     "discount": "10%",
-    "description": "Para tus mejores eventos y reuniones, Fernet Branca 750ml"
+    "description": "Para tus mejores eventos y reuniones, Fernet Branca 750ml",
+    "schedules": [
+      "Lunes 09.00 a 20.00",
+      "Martes 09.00 a 20.00",
+      "Miércoles 09.00 a 20.00",
+      "Jueves 09.00 a 20.00",
+      "Viernes 09.00 a 20.00",
+      "Sábado 09.00 a 14.00"
+    ],
+    "payments": ["MercadoPago", "Efectivo", "Transferencia", "Débito"],
+    "contact": [
+      "(291)-1112345",
+      "contacto@pyqdespensa.com.ar",
+      "@pyqdespensa_ok"
+    ]
   }
 ]

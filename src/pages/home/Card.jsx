@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import { IoStar, IoChatbox } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Card = ({ shop }) => {
   const {
+    id,
     nameShops,
     category,
     product,
@@ -12,11 +14,13 @@ const Card = ({ shop }) => {
     discount,
     description,
   } = shop;
+
+  // Calcula el precio con descuento
   const discountedPrice = (price * (1 - parseFloat(discount) / 100)).toFixed(3);
 
   return (
     <div className="bg-white shadow-md rounded-xl p-4 min-w-[280px] max-w-xs pb-6 relative">
-      {" "}
+      {/* Información de la tienda */}
       <div className="flex items-center mb-3">
         <div className="w-12 h-12 rounded-full bg-blue-gradient text-white flex items-center justify-center text-lg font-semibold">
           {nameShops.charAt(0)}
@@ -30,13 +34,17 @@ const Card = ({ shop }) => {
           </p>
         </div>
       </div>
-      {/* Imagen */}
-      <img
-        src={images[0]}
-        alt={product}
-        className="w-full h-44 object-cover mb-3"
-      />
-      {/* Título del producto, rating y comentarios */}
+
+      {/* Imagen del producto con link al detalle */}
+      <Link to={`/product/${id}`}>
+        <img
+          src={images[0]}
+          alt={product}
+          className="w-full h-44 object-cover mb-3 cursor-pointer hover:opacity-90"
+        />
+      </Link>
+
+      {/* Información del producto, rating y comentarios */}
       <div className="flex justify-between items-center mb-3">
         <h4 className="font-bold text-[16px] text-gray-800">{product}</h4>
         <div className="flex items-center space-x-1">
@@ -48,21 +56,21 @@ const Card = ({ shop }) => {
           </span>
         </div>
       </div>
+
       {/* Descripción del producto */}
       <p className="text-gray-500 text-sm mb-3 line-clamp-4 font-poppins">
         {description}
       </p>
+
       {/* Precio y descuento */}
       <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center font-poppins">
-        {" "}
-        {/* Posicionamiento absoluto */}
         <div className="bg-blue-gradient text-white p-1 px-3 rounded-lg text-xl font-bold">
           ${discountedPrice}
         </div>
         <div className="flex items-center space-x-2 text-sm">
           <span className="text-orange-500 font-bold">{discount}% OFF</span>
           <span className="line-through text-sm font-semibold text-gray-400">
-            ${price}00
+            ${price.toFixed(2)}0
           </span>
         </div>
       </div>
@@ -70,8 +78,10 @@ const Card = ({ shop }) => {
   );
 };
 
+// Validación de PropTypes
 Card.propTypes = {
   shop: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     nameShops: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
     product: PropTypes.string.isRequired,
