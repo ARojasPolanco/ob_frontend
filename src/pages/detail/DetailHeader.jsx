@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { FiShare2 } from "react-icons/fi";
 import { IoStar, IoChatbox } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const DetailHeader = ({ nameShops, category, product, image, star }) => {
   return (
@@ -11,16 +12,23 @@ const DetailHeader = ({ nameShops, category, product, image, star }) => {
             {nameShops.charAt(0)}
           </div>
           <div className="ml-3">
-            <h3 className="text-[16px] text-gray-800 font-bold font-poppins">
-              {nameShops}
-            </h3>
+            <Link to="/">
+              <h3 className="text-[16px] text-gray-800 font-bold font-poppins">
+                {nameShops}
+              </h3>
+            </Link>
             <p className="text-sm font-normal text-gray-500 font-poppins">
               {category}
             </p>
           </div>
         </div>
         <div className="flex justify-end">
-          <FiShare2 size={26} className="text-primary-300" />
+          <Link to="/">
+            <FiShare2
+              size={26}
+              className="text-primary-300 hover:text-primary-100"
+            />
+          </Link>
         </div>
       </div>
       <img

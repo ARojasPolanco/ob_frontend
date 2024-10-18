@@ -21,13 +21,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": [
       "(291)-1112345",
       "contacto@total-carnes.com.ar",
@@ -56,13 +50,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112337", "contacto@losmellis.com.ar", "@losmellisok"]
   },
   {
@@ -87,13 +75,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "info@italo-arg.com.ar", "@laitaloargentinaok"]
   },
   {
@@ -118,13 +100,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "info@loscuniados.com", "@loscuniadosok"]
   },
   {
@@ -149,13 +125,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "contacto@aldivinomalbec.com", "@aldivino_ok"]
   },
   {
@@ -180,13 +150,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "contacto@cbyb.com.ar", "@carniceriacbyb"]
   },
   {
@@ -211,13 +175,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": [
-      "MercadoPago",
-      "Efectivo",
-      "Transferencia",
-      "Débito",
-      "Crédito"
-    ],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "contacto@cbyb.com.ar", "@carniceriacbyb"]
   },
   {
@@ -242,7 +200,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": ["MercadoPago", "Efectivo", "Transferencia", "Débito"],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": [
       "(291)-1112345",
       "contacto@pyqdespensa.com.ar",
@@ -271,7 +229,7 @@
       "Viernes 09.00 a 20.00",
       "Sábado 09.00 a 14.00"
     ],
-    "payments": ["MercadoPago", "Efectivo", "Transferencia", "Débito"],
+    "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": [
       "(291)-1112345",
       "contacto@pyqdespensa.com.ar",
