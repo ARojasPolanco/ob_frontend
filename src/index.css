@@ -6,6 +6,10 @@
   background: linear-gradient(to right, #6dd3f8, #3584f3);
 }
 
+.bg-custom-gradient {
+  background: linear-gradient(to bottom, #edf3ff, #d6efff);
+}
+
 /* Para navegadores basados en WebKit (Chrome, Safari) */
 .scroll-container::-webkit-scrollbar {
   display: none;

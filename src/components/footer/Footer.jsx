@@ -1,39 +1,47 @@
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import footerLogo from "../../assets/images/logo-ob1-removebg-preview.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 py-4 px-6 flex justify-between items-center">
-      {/* Sección de texto e iconos */}
-      <div className="flex flex-col space-y-2 text-sm font-poppins">
-        <p className="text-sm text-gray-600">Contacto</p>
-        <p className="text-sm text-gray-600">LIER</p>
-        <p className="text-sm text-gray-600">Políticas de privacidad</p>
-        <div className="flex space-x-4 mt-2">
+    <footer className="bg-white py-6 px-8 flex justify-between items-start">
+      {/* Mitad izquierda: Sección de texto */}
+      <div className="w-1/2 flex flex-col space-y-2 text-sm font-poppins text-titles">
+        <p>Contacto:</p>
+        <p>LIER</p>
+        <p>Políticas de privacidad</p>
+        <p>Términos de uso</p>
+      </div>
+
+      {/* Mitad derecha: Logo grande con íconos de redes sociales */}
+      <div className="w-1/2 flex flex-col items-center mt-[-50px]">
+        {/* Logo */}
+        <img
+          src={footerLogo}
+          alt="Ofertas Bahía Logo"
+          className="h-36 object-contain mb-0"
+        />
+
+        {/* Iconos de redes sociales */}
+        <div className="flex space-x-3 mt-[-20px]">
           <a href="https://www.instagram.com" aria-label="Instagram">
             <FaInstagram
               size={26}
-              className="bg-blue-gradient text-white p-1 rounded"
+              className="text-white bg-blue-gradient p-1 rounded-md hover:text-blue-700"
             />
           </a>
           <a href="https://www.linkedin.com" aria-label="LinkedIn">
-            <FaLinkedin
+            <FaLinkedinIn
               size={26}
-              className="bg-blue-gradient text-white p-1 rounded"
+              className="text-white bg-blue-gradient p-1 rounded-md hover:text-blue-700"
             />
           </a>
-          <a href="https://www.twitter.com" aria-label="Twitter">
-            <FaTwitter
+          <a href="https://www.facebook.com" aria-label="Facebook">
+            <FaFacebookF
               size={26}
-              className="bg-blue-gradient text-white p-1 rounded"
+              className="text-white bg-blue-gradient p-1 rounded-md hover:text-blue-700"
             />
           </a>
         </div>
-      </div>
-
-      {/* Logo del footer */}
-      <div className="flex items-center space-x-1">
-        <img src={footerLogo} alt="Ofertas Bahía Logo" className="h-36" />
       </div>
     </footer>
   );

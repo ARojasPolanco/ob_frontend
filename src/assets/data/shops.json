@@ -14,16 +14,17 @@
     "discount": "15%",
     "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas",
     "schedules": [
-      "Lunes 09.00 a 20.00",
-      "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
-      "Jueves 09.00 a 20.00",
-      "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Lunes 09:00 a 20:00hs",
+      "Martes 09:00 a 20:00hs",
+      "Miércoles 09:00 a 20:00hs",
+      "Jueves 09:00 a 20:00hs",
+      "Viernes 09:00 a 20:00hs",
+      "Sábado 09:00 a 14:00hs",
+      "Domingo Cerrado"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": [
-      "(291)-1112345",
+      "(0291)-4319164",
       "contacto@total-carnes.com.ar",
       "@carniceriatotalcarneok"
     ]
@@ -45,10 +46,11 @@
     "schedules": [
       "Lunes 09.00 a 20.00",
       "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
+      "Miércoles Cerrado",
       "Jueves 09.00 a 20.00",
       "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Sábado 09.00 a 14.00",
+      "Domingo 09.00 a 14.00"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112337", "contacto@losmellis.com.ar", "@losmellisok"]
@@ -70,10 +72,11 @@
     "schedules": [
       "Lunes 09.00 a 20.00",
       "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
+      "Miércoles Cerrado",
       "Jueves 09.00 a 20.00",
       "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Sábado 09.00 a 14.00",
+      "Domingo 09.00 a 14.00"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "info@italo-arg.com.ar", "@laitaloargentinaok"]
@@ -95,10 +98,11 @@
     "schedules": [
       "Lunes 09.00 a 20.00",
       "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
+      "Miércoles Cerrado",
       "Jueves 09.00 a 20.00",
       "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Sábado 09.00 a 14.00",
+      "Domingo 09.00 a 14.00"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "info@loscuniados.com", "@loscuniadosok"]
@@ -107,12 +111,12 @@
     "id": "5",
     "nameShops": "Al Divino Malbec",
     "category": "Vinoteca",
-    "address": "",
+    "address": "Belgrano 949, B8109 Punta Alta, Provincia de Buenos Aires",
     "product": "Blend de Malbec Mosquita Muerta",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729173115/mosquita_xiwqnd.jpg"
     ],
-    "imageMap": "",
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729380330/Captura_de_pantalla_2024-10-19_202426_ba8jtm.png",
     "price": 12.9,
     "star": 5,
     "discount": "5%",
@@ -120,10 +124,11 @@
     "schedules": [
       "Lunes 09.00 a 20.00",
       "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
+      "Miércoles Cerrado",
       "Jueves 09.00 a 20.00",
       "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Sábado 09.00 a 14.00",
+      "Domingo 09.00 a 14.00"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "contacto@aldivinomalbec.com", "@aldivino_ok"]
@@ -145,10 +150,11 @@
     "schedules": [
       "Lunes 09.00 a 20.00",
       "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
+      "Miércoles Cerrado",
       "Jueves 09.00 a 20.00",
       "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Sábado 09.00 a 14.00",
+      "Domingo 09.00 a 14.00"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": ["(291)-1112345", "contacto@cbyb.com.ar", "@carniceriacbyb"]
@@ -182,23 +188,24 @@
     "id": "8",
     "nameShops": "Pan y Queso",
     "category": "Despensa",
-    "address": "",
+    "address": "Belgrano 903, B8109 Punta Alta, Provincia de Buenos Aires",
     "product": "Coca Cola 2.5 Retornable",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174371/coca-25retornable_cz9kr8.jpg"
     ],
-    "imageMap": "",
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729380418/Captura_de_pantalla_2024-10-19_202612_ue3yp1.png",
     "price": 3.4,
     "star": 3,
     "discount": "5%",
     "description": "Lleva a tu mesa, para compartir en familia, la nueva coca cola retornable de 2.5lts",
     "schedules": [
-      "Lunes 09.00 a 20.00",
-      "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
-      "Jueves 09.00 a 20.00",
-      "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Lunes 09.00 a 20.00hs",
+      "Martes Cerrado",
+      "Miércoles 09.00 a 20.00hs",
+      "Jueves 09.00 a 20.00hs",
+      "Viernes 09.00 a 20.00hs",
+      "Sábado 09.00 a 14.00hs",
+      "Domingo 08.00 a 19.00hs"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": [
@@ -211,23 +218,24 @@
     "id": "9",
     "nameShops": "Pan y Queso",
     "category": "Despensa",
-    "address": "",
+    "address": "Belgrano 903, B8109 Punta Alta, Provincia de Buenos Aires",
     "product": "Fernet Branca 750",
     "images": [
       "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729174769/Branca_botella_3_ee09sn.jpg"
     ],
-    "imageMap": "",
+    "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729380418/Captura_de_pantalla_2024-10-19_202612_ue3yp1.png",
     "price": 8.1,
     "star": 4,
     "discount": "10%",
     "description": "Para tus mejores eventos y reuniones, Fernet Branca 750ml",
     "schedules": [
-      "Lunes 09.00 a 20.00",
-      "Martes 09.00 a 20.00",
-      "Miércoles 09.00 a 20.00",
-      "Jueves 09.00 a 20.00",
-      "Viernes 09.00 a 20.00",
-      "Sábado 09.00 a 14.00"
+      "Lunes 09.00 a 20.00hs",
+      "Martes Cerrado",
+      "Miércoles 09.00 a 20.00hs",
+      "Jueves 09.00 a 20.00hs",
+      "Viernes 09.00 a 20.00hs",
+      "Sábado 09.00 a 14.00hs",
+      "Domingo 08.00 a 19.00hs"
     ],
     "payments": ["Tarjetas, billeteras electrónicas y pago en efectivo"],
     "contact": [

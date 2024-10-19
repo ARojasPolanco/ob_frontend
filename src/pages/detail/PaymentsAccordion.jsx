@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { FaCreditCard } from "react-icons/fa";
-import { SiMercadopago } from "react-icons/si";
-import { IoCashOutline } from "react-icons/io5";
 
+import visaIcon from "../../../public/assets/images/visa.png";
+
+import mpIcon from "../../../public/assets/images/mp.png";
+
+import dollarIcon from "../../../public/assets/images/dollar.png";
 import PropTypes from "prop-types";
 
 const PaymentsAccordion = ({ payments }) => {
@@ -14,7 +16,7 @@ const PaymentsAccordion = ({ payments }) => {
   };
 
   return (
-    <div className="border-b font-poppins">
+    <div className="border-b font-poppins bg-gray-50">
       <button
         onClick={toggleAccordion}
         className="flex justify-between items-center w-full py-4"
@@ -33,14 +35,24 @@ const PaymentsAccordion = ({ payments }) => {
         <div className="py-2 text-gray-600">
           <ul>
             {payments.map((payment, index) => (
-              <li key={index}>{payment}</li>
+              <li key={index} className="text-gray-700">
+                {payment}
+              </li>
             ))}
-            <div className="flex justify-start mt-4">
-              <FaCreditCard size={24} className="m-2 text-slate-500" />
-              <SiMercadopago size={26} className="m-2 text-blue-700" />
-              <IoCashOutline size={24} className="m-2 text-green-600" />
-            </div>
           </ul>
+
+          {/* Íconos de métodos de pago */}
+          <div className="flex justify-start mt-1">
+            <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md m-2">
+              <img src={visaIcon} alt="visa" />
+            </div>
+            <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md m-2">
+              <img src={mpIcon} alt="mp" />
+            </div>
+            <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md m-2">
+              <img src={dollarIcon} alt="dollar" />
+            </div>
+          </div>
         </div>
       )}
     </div>

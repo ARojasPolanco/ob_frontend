@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { IoStar, IoChatbox } from "react-icons/io5";
+//import { IoStar, IoChatbox } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Card = ({ shop }) => {
@@ -10,7 +10,6 @@ const Card = ({ shop }) => {
     product,
     images,
     price,
-    star,
     discount,
     description,
   } = shop;
@@ -26,7 +25,7 @@ const Card = ({ shop }) => {
           {nameShops.charAt(0)}
         </div>
         <div className="ml-3">
-          <h3 className="text-[16px] text-gray-800 font-bold font-poppins">
+          <h3 className="text-[16px] text-titles font-bold font-poppins">
             {nameShops}
           </h3>
           <p className="text-sm font-normal text-gray-500 font-poppins">
@@ -46,15 +45,15 @@ const Card = ({ shop }) => {
 
       {/* Información del producto, rating y comentarios */}
       <div className="flex justify-between items-center mb-3">
-        <h4 className="font-bold text-[16px] text-gray-800">{product}</h4>
-        <div className="flex items-center space-x-1">
+        <h4 className="font-bold text-[16px] text-titles">{product}</h4>
+        {/* <div className="flex items-center space-x-1">
           <span className="text-yellow-500 flex items-center">
             {star} <IoStar size={16} />
           </span>
           <span className="text-gray-500 flex items-center">
             8 <IoChatbox size={16} />
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Descripción del producto */}
@@ -87,7 +86,7 @@ Card.propTypes = {
     product: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     price: PropTypes.number.isRequired,
-    star: PropTypes.number.isRequired,
+    //star: PropTypes.number.isRequired,
     discount: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
   }).isRequired,

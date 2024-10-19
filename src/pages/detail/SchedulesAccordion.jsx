@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
 import PropTypes from "prop-types";
 
 const SchedulesAccordion = ({ schedules }) => {
@@ -28,9 +27,32 @@ const SchedulesAccordion = ({ schedules }) => {
       {isOpen && (
         <div className="py-2 text-gray-600">
           <ul>
-            {schedules.map((schedule, index) => (
-              <li key={index}>{schedule}</li>
-            ))}
+            {schedules.map((schedule, index) => {
+              const [day, ...hours] = schedule.split(" ");
+              const isClosed = hours.join(" ") === "Cerrado";
+
+              return (
+                <li key={index} className="flex justify-between py-1">
+                  {/* Día */}
+                  <span
+                    className={`text-gray-700 ${
+                      isClosed ? "text-red-500 font-normal" : ""
+                    }`}
+                  >
+                    {day}
+                  </span>
+
+                  {/* Hora o Cerrado */}
+                  <span
+                    className={`text-gray-700 ${
+                      isClosed ? "text-red-500 font-normal" : ""
+                    }`}
+                  >
+                    {hours.join(" ")} {/* Unir nuevamente las horas */}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}

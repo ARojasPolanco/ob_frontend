@@ -6,9 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'custom-gradient': 'linear-gradient(to right, #EDF3FF, #D6EFFF)',
-      },
+      
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
@@ -21,6 +19,9 @@ export default {
         "bg-100": "#fffefb",
         "bg-200": "#f5f4f1",
         "bg-300": "#454545",
+        "titles": "#495d60",
+        "titles-menu": "#49454f", 
+        "menu-color": "#6dd3f8"
       }
     },
   },
