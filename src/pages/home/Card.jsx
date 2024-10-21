@@ -56,7 +56,7 @@ const Card = ({ shop }) => {
       </div>
 
       {/* Descripción del producto */}
-      <p className="text-gray-500 text-sm mb-3 line-clamp-4 font-poppins">
+      <p className="text-gray-500 text-sm mb-8 line-clamp-9 font-poppins">
         {description}
       </p>
 
