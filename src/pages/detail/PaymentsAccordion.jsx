@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
 import visaIcon from "../../../public/assets/images/visa.png";
-
 import mpIcon from "../../../public/assets/images/mp.png";
-
 import dollarIcon from "../../../public/assets/images/dollar.png";
 import PropTypes from "prop-types";
 
@@ -16,7 +13,7 @@ const PaymentsAccordion = ({ payments }) => {
   };
 
   return (
-    <div className="border-b font-poppins bg-gray-50">
+    <div className="border-b font-poppins">
       <button
         onClick={toggleAccordion}
         className="flex justify-between items-center w-full py-4"
@@ -44,13 +41,21 @@ const PaymentsAccordion = ({ payments }) => {
           {/* Íconos de métodos de pago */}
           <div className="flex justify-start mt-1">
             <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md m-2">
-              <img src={visaIcon} alt="visa" />
+              <img
+                src={visaIcon}
+                alt="visa"
+                className="w-8 h-8 object-contain"
+              />
             </div>
             <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md m-2">
-              <img src={mpIcon} alt="mp" />
+              <img src={mpIcon} alt="mp" className="w-8 h-8 object-contain" />
             </div>
             <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md m-2">
-              <img src={dollarIcon} alt="dollar" />
+              <img
+                src={dollarIcon}
+                alt="dollar"
+                className="w-8 h-8 object-contain"
+              />
             </div>
           </div>
         </div>
