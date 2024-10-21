@@ -14,14 +14,13 @@ const Card = ({ shop }) => {
     description,
   } = shop;
 
-  // Calcula el precio con descuento
   const discountedPrice = (price * (1 - parseFloat(discount) / 100)).toFixed(3);
 
   return (
-    <div className="bg-white shadow-md rounded-xl p-4 min-w-[280px] max-w-xs pb-6 relative">
+    <div className="bg-white shadow-md rounded-xl p-4 min-w-[280px] max-w-xs pb-10 relative">
       {/* Información de la tienda */}
       <div className="flex items-center mb-3">
-        <div className="w-12 h-12 rounded-full bg-blue-gradient text-white flex items-center justify-center text-lg font-semibold">
+        <div className="w-12 h-12 rounded-full bg-primary-100 text-white flex items-center justify-center text-lg font-semibold">
           {nameShops.charAt(0)}
         </div>
         <div className="ml-3">
@@ -62,8 +61,8 @@ const Card = ({ shop }) => {
       </p>
 
       {/* Precio y descuento */}
-      <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center font-poppins">
-        <div className="bg-blue-gradient text-white p-1 px-3 rounded-lg text-xl font-bold">
+      <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center font-poppins p-0 pb-0">
+        <div className="bg-primary-100 text-white p-1 px-3 rounded-lg text-xl font-bold">
           ${discountedPrice}
         </div>
         <div className="flex items-center space-x-2 text-sm">

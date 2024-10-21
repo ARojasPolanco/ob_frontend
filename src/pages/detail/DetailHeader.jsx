@@ -8,7 +8,7 @@ const DetailHeader = ({ nameShops, category, product, image }) => {
     <div className="flex flex-col font-poppins">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center">
-          <div className="w-12 h-12 rounded-full bg-blue-gradient text-white flex items-center justify-center text-lg font-semibold">
+          <div className="w-12 h-12 rounded-full bg-primary-100 text-white flex items-center justify-center text-lg font-semibold">
             {nameShops.charAt(0)}
           </div>
           <div className="ml-3">

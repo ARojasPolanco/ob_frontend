@@ -17,7 +17,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
         onKeyPress={handleSearch}
       />
       <button
-        className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-blue-gradient rounded-full p-1 text-white"
+        className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-primary-100 rounded-full p-1 text-white"
         onClick={() => onSearch(document.querySelector("input").value)}
       >
         <IoSearch size={22} />
