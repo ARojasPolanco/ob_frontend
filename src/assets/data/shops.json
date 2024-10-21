@@ -11,7 +11,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186987/total-carnes-dir_lnokh3.png",
     "price": 8.9,
     "star": 4,
-    "discount": "15%",
+    "discount": "15",
     "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas",
     "schedules": [
       "Lunes 09:00 a 20:00hs",
@@ -41,7 +41,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186986/los-melli-dir_vhashf.png",
     "price": 9.9,
     "star": 5,
-    "discount": "10%",
+    "discount": "10",
     "description": "Peceto de vaca, excelente y tierno corte para milanesas",
     "schedules": [
       "Lunes 09.00 a 20.00",
@@ -67,7 +67,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186985/la-italo-arg-dir_kemnwo.png",
     "price": 8.6,
     "star": 4,
-    "discount": "10%",
+    "discount": "10",
     "description": "Excelente corte de Vacío de Vaca, ideal para una buena parrillada con amigos",
     "schedules": [
       "Lunes 09.00 a 20.00",
@@ -93,7 +93,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186984/los-cuniados-dir_xeso46.png",
     "price": 9.9,
     "star": 3,
-    "discount": "15%",
+    "discount": "15",
     "description": "Bola de lomo de vaca, excelente corte para churrascos y/o milanesas",
     "schedules": [
       "Lunes 09.00 a 20.00",
@@ -119,7 +119,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729380330/Captura_de_pantalla_2024-10-19_202426_ba8jtm.png",
     "price": 12.9,
     "star": 5,
-    "discount": "5%",
+    "discount": "5",
     "description": "Excelente blend de malbec, un vino excepcional para compartir en una mesa",
     "schedules": [
       "Lunes 09.00 a 20.00",
@@ -145,7 +145,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186983/cbyb-dir_tjsm9u.png",
     "price": 6.9,
     "star": 3,
-    "discount": "5%",
+    "discount": "5",
     "description": "Bondiola de cerdo, gran corte para la parrilla o disfrutar en el horno",
     "schedules": [
       "Lunes 09.00 a 20.00",
@@ -171,7 +171,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729186983/cbyb-dir_tjsm9u.png",
     "price": 7.8,
     "star": 3,
-    "discount": "5%",
+    "discount": "5",
     "description": "Tapa de asado, gran corte para la parrilla o disfrutar en el horno",
     "schedules": [
       "Lunes 09.00 a 20.00",
@@ -196,7 +196,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729380418/Captura_de_pantalla_2024-10-19_202612_ue3yp1.png",
     "price": 3.4,
     "star": 3,
-    "discount": "5%",
+    "discount": "5",
     "description": "Lleva a tu mesa, para compartir en familia, la nueva coca cola retornable de 2.5lts",
     "schedules": [
       "Lunes 09.00 a 20.00hs",
@@ -226,7 +226,7 @@
     "imageMap": "https://res.cloudinary.com/dnxlkkx8s/image/upload/v1729380418/Captura_de_pantalla_2024-10-19_202612_ue3yp1.png",
     "price": 8.1,
     "star": 4,
-    "discount": "10%",
+    "discount": "10",
     "description": "Para tus mejores eventos y reuniones, Fernet Branca 750ml",
     "schedules": [
       "Lunes 09.00 a 20.00hs",
