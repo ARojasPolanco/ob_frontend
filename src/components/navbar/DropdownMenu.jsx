@@ -44,7 +44,7 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
           <img src={menuLogo} alt="Logo del Menú" className="h-36 w-auto" />
         </div>
 
-        <h2 className="text-sm text-start pl-12 font-normal mt-2 mb-4 text-black">
+        <h2 className="text-sm text-start pl-12 font-normal mt-2 mb-4 text-titles-menu">
           Menú
         </h2>
 
@@ -54,7 +54,7 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
               className={`${
                 selected === "Carnes rojas"
                   ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-black"
+                  : "text-titles-menu"
               } px-4 py-2 rounded-full w-auto text-left`}
               onClick={() => handleSelect("Carnes rojas")}
             >
@@ -66,7 +66,7 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
               className={`${
                 selected === "Carnes blancas"
                   ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-black"
+                  : "text-titles-menu"
               } px-4 py-2 rounded-full w-auto text-left`}
               onClick={() => handleSelect("Carnes blancas")}
             >
@@ -78,7 +78,7 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
               className={`${
                 selected === "Bebidas c/alcohol"
                   ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-black"
+                  : "text-titles-menu"
               } px-4 py-2 rounded-full w-auto text-left`}
               onClick={() => handleSelect("Bebidas c/alcohol")}
             >
@@ -90,7 +90,7 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
               className={`${
                 selected === "Bebidas s/alcohol"
                   ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-black"
+                  : "text-titles-menu"
               } px-4 py-2 rounded-full w-auto text-left`}
               onClick={() => handleSelect("Bebidas s/alcohol")}
             >

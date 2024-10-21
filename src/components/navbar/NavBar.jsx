@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../logo/Logo";
 import MenuButton from "./MenuButton";
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,9 @@ const Navbar = () => {
       <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
 
       <div className="absolute left-1/2 transform -translate-x-1/2">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
       </div>
 
       <DropdownMenu isOpen={isOpen} toggleMenu={toggleMenu} />
