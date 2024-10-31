@@ -16,19 +16,19 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex items-center justify-between px-4 py-3 bg-white shadow-md w-full">
-      {/* Menú hamburguesa alineado a la izquierda */}
+      {/* Menú hamburguesa */}
       <div className="flex items-center">
         <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
       </div>
 
-      {/* Logo centrado */}
+      {/* Logo */}
       <div className="absolute left-1/2 transform -translate-x-1/2">
         <Link to="/">
           <Logo />
         </Link>
       </div>
 
-      <div className="flex items-center ml-auto space-x-9">
+      <div className="hidden sm:flex items-center ml-auto space-x-9">
         {isLoggedIn ? (
           <Link to="/">
             <Button variant="primary" onClick={logout}>
