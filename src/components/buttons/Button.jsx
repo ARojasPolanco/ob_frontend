@@ -13,8 +13,9 @@ const Button = ({
 
   const variantStyles = {
     primary:
-      "bg-white border-2 border-menu-color hover:bg-blue-gradient hover:text-primary-200 text-menu-color rounded-full",
-    secondary: "bg-blue-gradient text-white hover:bg-menu-color rounded-full",
+      "bg-white border-2 border-menu-color hover:bg-blue-gradient hover:text-primary-100 text-menu-color rounded-full",
+    secondary:
+      "bg-blue-gradient text-white hover:text-primary-100 rounded-full",
   };
 
   const sizeStyles = {
@@ -23,12 +24,15 @@ const Button = ({
     lg: "px-6 py-3 text-lg",
   };
 
+  const variantClass = variantStyles[variant] || variantStyles.primary;
+  const sizeClass = sizeStyles[size] || sizeStyles.md;
+
   return (
     <button
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${
+      className={`${baseStyles} ${variantClass} ${sizeClass} ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
     >
@@ -42,7 +46,7 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(["button", "submit", "reset"]),
-  variant: PropTypes.oneOf(["login", "register"]),
+  variant: PropTypes.oneOf(["primary", "secondary"]),
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   disabled: PropTypes.bool,
 };

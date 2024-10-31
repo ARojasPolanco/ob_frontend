@@ -12,14 +12,13 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Verifica si el email contiene el dominio especial
     if (email.endsWith("@ofertas-bahia.net")) {
       loginAsAdmin();
+      navigate("/register");
     } else {
       loginAsUser();
+      navigate("/");
     }
-
-    navigate("/");
   };
 
   return (

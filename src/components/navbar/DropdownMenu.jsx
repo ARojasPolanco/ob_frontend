@@ -109,6 +109,11 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
                     Comercios
                   </Link>
                 </li>
+                <li className="px-8 pl-1">
+                  <Button onClick={logout} variant="primary">
+                    Log Out
+                  </Button>
+                </li>
               </>
             ) : (
               <>
@@ -120,6 +125,11 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
                 ].map((item) => (
                   <li key={item}>{renderButton(item)}</li>
                 ))}
+                <li>
+                  <Button onClick={logout} variant="primary">
+                    Log Out
+                  </Button>
+                </li>
               </>
             )
           ) : (
@@ -134,24 +144,6 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
               ))}
             </>
           )}
-
-          {/* Botones de Log In y Register - Pantalla Mobile */}
-          <li className="sm:hidden mr-6">
-            {isLoggedIn ? (
-              <Button onClick={logout} variant="primary">
-                Log Out
-              </Button>
-            ) : (
-              <div className="flex flex-col space-y-4">
-                <Link to="/login">
-                  <Button variant="primary">Log In</Button>
-                </Link>
-                <Link to="/register">
-                  <Button variant="secondary">Register</Button>
-                </Link>
-              </div>
-            )}
-          </li>
         </ul>
       </div>
     </>
