@@ -40,7 +40,11 @@ const DetailInformation = ({ description, imageMap, address }) => {
 
         {openTab === "map" && (
           <div className="rounded-md">
-            <img src={imageMap} alt="Mapa" className="w-full h-auto" />
+            <img
+              src={imageMap}
+              alt="Mapa"
+              className="w-full h-32 md:h-40 lg:h-96 object-cover"
+            />
             <p className="p-2 text-gray-700 font-semibold">{address}</p>
             <Link to={"https://maps.app.goo.gl/TUUXuVhhiiXBrxr18"}>
               <p className="flex justify-center text-[10px] font-medium underline mb-2">

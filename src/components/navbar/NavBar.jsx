@@ -3,8 +3,11 @@ import Logo from "../logo/Logo";
 import MenuButton from "./MenuButton";
 import DropdownMenu from "./DropdownMenu";
 import { Link } from "react-router-dom";
+import Button from "../buttons/Button";
+import useAuthStore from "../../store/useAuthStore";
 
 const Navbar = () => {
+  const { isLoggedIn, logout } = useAuthStore();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,15 +15,37 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative flex items-center justify-between px-4 py-4 bg-white shadow-md w-full">
-      <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
+    <nav className="relative flex items-center justify-between px-4 py-3 bg-white shadow-md w-full">
+      {/* Menú hamburguesa alineado a la izquierda */}
+      <div className="flex items-center">
+        <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
+      </div>
 
+      {/* Logo centrado */}
       <div className="absolute left-1/2 transform -translate-x-1/2">
         <Link to="/">
           <Logo />
         </Link>
       </div>
 
+      <div className="flex items-center ml-auto space-x-9">
+        {isLoggedIn ? (
+          <Link to="/">
+            <Button variant="primary" onClick={logout}>
+              Log Out
+            </Button>
+          </Link>
+        ) : (
+          <Link to="/login">
+            <Button variant="primary">Log In</Button>
+          </Link>
+        )}
+        <Link to="/register">
+          <Button variant="secondary">Register</Button>
+        </Link>
+      </div>
+
+      {/* Menú desplegable */}
       <DropdownMenu isOpen={isOpen} toggleMenu={toggleMenu} />
     </nav>
   );

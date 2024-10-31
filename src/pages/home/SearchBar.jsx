@@ -9,7 +9,7 @@ const SearchBar = ({ placeholder, onSearch }) => {
   };
 
   return (
-    <div className="relative w-full max-w-md mx-auto px-6">
+    <div className="relative w-full px-6 mx-auto sm:w-3/4 lg:w-1/2">
       <input
         type="text"
         className="w-full h-12 pl-4 pr-12 rounded-full bg-white shadow-md focus:outline-none text-gray-700 text-sm font-poppins"

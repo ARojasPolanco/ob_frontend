@@ -21,7 +21,9 @@ export default {
         "bg-300": "#454545",
         "titles": "#495d60",
         "titles-menu": "#49454f", 
-        "menu-color": "#6dd3f8"
+        "menu-color": "#6dd3f8",
+        "placeholder": "#6A939A",
+        "discount-color": "#FF8900"
       }
     },
   },
