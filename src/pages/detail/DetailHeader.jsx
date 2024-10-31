@@ -34,7 +34,7 @@ const DetailHeader = ({ nameShops, category, product, image }) => {
       <img
         src={image}
         alt={product}
-        className="w-96 h-48 object-cover shadow-xl hover:opacity-75"
+        className="w-full h-48 object-cover shadow-xl hover:opacity-75 md:h-64 lg:h-80"
       />
 
       <div className="flex justify-between items-center mb-1 mt-4">

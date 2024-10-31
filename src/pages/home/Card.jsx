@@ -66,8 +66,8 @@ const Card = ({ shop }) => {
           ${discountedPrice}
         </div>
         <div className="flex items-center space-x-2 text-sm">
-          <span className="text-orange-500 font-bold">{discount}% OFF</span>
-          <span className="line-through text-sm font-semibold text-gray-400">
+          <span className="text-discount-color font-bold">{discount}% OFF</span>
+          <span className="line-through text-sm font-semibold text-placeholder">
             ${price.toFixed(2)}0
           </span>
         </div>

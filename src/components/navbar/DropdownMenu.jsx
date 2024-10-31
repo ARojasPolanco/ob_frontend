@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-
+import useAuthStore from "../../store/useAuthStore";
 import menuLogo from "../../assets/images/logo-ob1-removebg-preview.png";
 
+import PropTypes from "prop-types";
+
 const DropdownMenu = ({ isOpen, toggleMenu }) => {
+  const { isLoggedIn, isAdmin } = useAuthStore();
   const menuRef = useRef(null);
   const [selected, setSelected] = useState("");
 
@@ -26,7 +30,21 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
 
   const handleSelect = (text) => {
     setSelected(text);
+    toggleMenu();
   };
+
+  const renderButton = (text) => (
+    <button
+      className={`${
+        selected === text
+          ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
+          : "text-titles-menu"
+      } px-4 py-2 rounded-full w-auto text-left`}
+      onClick={() => handleSelect(text)}
+    >
+      {text}
+    </button>
+  );
 
   return (
     <>
@@ -48,59 +66,94 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
           Menú
         </h2>
 
-        <ul className="w-full text-start pl-8 text-sm font-medium font-poppins space-y-3">
-          <li>
-            <button
-              className={`${
-                selected === "Carnes rojas"
-                  ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-titles-menu"
-              } px-4 py-2 rounded-full w-auto text-left`}
-              onClick={() => handleSelect("Carnes rojas")}
-            >
-              Carnes rojas
-            </button>
-          </li>
-          <li>
-            <button
-              className={`${
-                selected === "Carnes blancas"
-                  ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-titles-menu"
-              } px-4 py-2 rounded-full w-auto text-left`}
-              onClick={() => handleSelect("Carnes blancas")}
-            >
-              Carnes blancas
-            </button>
-          </li>
-          <li>
-            <button
-              className={`${
-                selected === "Bebidas c/alcohol"
-                  ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-titles-menu"
-              } px-4 py-2 rounded-full w-auto text-left`}
-              onClick={() => handleSelect("Bebidas c/alcohol")}
-            >
-              Bebidas c/alcohol
-            </button>
-          </li>
-          <li>
-            <button
-              className={`${
-                selected === "Bebidas s/alcohol"
-                  ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
-                  : "text-titles-menu"
-              } px-4 py-2 rounded-full w-auto text-left`}
-              onClick={() => handleSelect("Bebidas s/alcohol")}
-            >
-              Bebidas s/alcohol
-            </button>
-          </li>
+        <ul className="w-full text-start pl-8 text-sm font-medium font-poppins space-y-6">
+          {isLoggedIn ? (
+            isAdmin ? (
+              <>
+                <li>
+                  <Link
+                    to="/register"
+                    className={`${
+                      selected === "Registrar comercio"
+                        ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
+                        : "text-titles-menu"
+                    } px-4 py-2 rounded-full w-auto text-left`}
+                    onClick={() => handleSelect("Registrar comercio")}
+                  >
+                    Registrar comercio
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/create"
+                    className={`${
+                      selected === "Crear oferta"
+                        ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
+                        : "text-titles-menu"
+                    } px-4 py-2 rounded-full w-auto text-left`}
+                    onClick={() => handleSelect("Crear oferta")}
+                  >
+                    Crear oferta
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/businesses"
+                    className={`${
+                      selected === "Comercios"
+                        ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white py-4"
+                        : "text-titles-menu"
+                    } px-4 py-2 rounded-full w-auto text-left`}
+                    onClick={() => handleSelect("Comercios")}
+                  >
+                    Comercios
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                {[
+                  "Carnes rojas",
+                  "Carnes blancas",
+                  "Bebidas c/alcohol",
+                  "Bebidas s/alcohol",
+                ].map((item) => (
+                  <li key={item}>{renderButton(item)}</li>
+                ))}
+              </>
+            )
+          ) : (
+            <>
+              {[
+                "Carnes rojas",
+                "Carnes blancas",
+                "Bebidas c/alcohol",
+                "Bebidas s/alcohol",
+              ].map((item) => (
+                <li key={item}>{renderButton(item)}</li>
+              ))}
+            </>
+          )}
         </ul>
+
+        {/* <div className="mt-4 text-center">
+          <button
+            onClick={
+              isLoggedIn ? logout : () => console.log("Redirect to login")
+            }
+            className="text-blue-500 font-medium"
+          >
+            {isLoggedIn ? "Cerrar sesión" : "Log In"}
+          </button>
+        </div> */}
       </div>
     </>
   );
+};
+
+DropdownMenu.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  toggleMenu: PropTypes.func.isRequired,
 };
 
 export default DropdownMenu;
