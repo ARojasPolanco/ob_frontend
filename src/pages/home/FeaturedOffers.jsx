@@ -8,7 +8,7 @@ const FeaturedOffers = () => {
       <h1 className="text-center text-[16px] font-poppins font-semibold text-titles mb-6 mt-6">
         Ofertas destacadas
       </h1>
-      {/* Contenedor para el diseño responsive */}
+
       <div className="hidden sm:grid sm:grid-cols-2 sm:grid-rows-4 lg:grid-cols-5 lg:grid-rows-1 md:gap-4 lg:gap-2 md:ml-8 mb-10">
         {shops.slice(0, 5).map((shop) => (
           <Card key={shop.id} shop={shop} />
@@ -17,7 +17,7 @@ const FeaturedOffers = () => {
       <div className="flex justify-center">
         <Link
           to="/"
-          className="text-center text-[16px] font-poppins font-semibold text-titles mb-6 mt-6"
+          className="hidden md:block text-center text-[16px] font-poppins font-semibold text-titles mb-6 mt-6"
         >
           Ver más ofertas
         </Link>

@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import useAuthStore from "../../store/useAuthStore";
 import menuLogo from "../../assets/images/logo-ob1-removebg-preview.png";
-
 import PropTypes from "prop-types";
+import Button from "../buttons/Button";
 
 const DropdownMenu = ({ isOpen, toggleMenu }) => {
-  const { isLoggedIn, isAdmin } = useAuthStore();
+  const { isLoggedIn, isAdmin, logout } = useAuthStore();
   const menuRef = useRef(null);
   const [selected, setSelected] = useState("");
 
@@ -134,18 +134,25 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
               ))}
             </>
           )}
-        </ul>
 
-        {/* <div className="mt-4 text-center">
-          <button
-            onClick={
-              isLoggedIn ? logout : () => console.log("Redirect to login")
-            }
-            className="text-blue-500 font-medium"
-          >
-            {isLoggedIn ? "Cerrar sesión" : "Log In"}
-          </button>
-        </div> */}
+          {/* Botones de Log In y Register - Pantalla Mobile */}
+          <li className="sm:hidden mr-6">
+            {isLoggedIn ? (
+              <Button onClick={logout} variant="primary">
+                Log Out
+              </Button>
+            ) : (
+              <div className="flex flex-col space-y-4">
+                <Link to="/login">
+                  <Button variant="primary">Log In</Button>
+                </Link>
+                <Link to="/register">
+                  <Button variant="secondary">Register</Button>
+                </Link>
+              </div>
+            )}
+          </li>
+        </ul>
       </div>
     </>
   );
