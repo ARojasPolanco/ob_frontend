@@ -7,7 +7,7 @@ import Button from "../buttons/Button";
 import useAuthStore from "../../store/useAuthStore";
 
 const Navbar = () => {
-  const { isLoggedIn, logout } = useAuthStore();
+  const { isLoggedIn, isAdmin, logout } = useAuthStore();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -29,20 +29,18 @@ const Navbar = () => {
       </div>
 
       <div className="hidden sm:flex items-center ml-auto space-x-9">
-        {isLoggedIn ? (
+        {isLoggedIn && (
           <Link to="/">
             <Button variant="primary" onClick={logout}>
               Log Out
             </Button>
           </Link>
-        ) : (
-          <Link to="/login">
-            <Button variant="primary">Log In</Button>
+        )}
+        {isAdmin && (
+          <Link to="/register">
+            <Button variant="secondary">Register</Button>
           </Link>
         )}
-        <Link to="/register">
-          <Button variant="secondary">Register</Button>
-        </Link>
       </div>
 
       {/* Menú desplegable */}
