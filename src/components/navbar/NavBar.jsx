@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../logo/Logo";
 import MenuButton from "./MenuButton";
 import DropdownMenu from "./DropdownMenu";
@@ -9,13 +9,32 @@ import useAuthStore from "../../store/useAuthStore";
 const Navbar = () => {
   const { isLoggedIn, isAdmin, logout } = useAuthStore();
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="relative flex items-center justify-between px-4 py-3 md:py-6 bg-white shadow-md w-full">
+    <nav
+      className={`fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-3 transition-all duration-300 ${
+        isScrolled
+          ? "scale-95 rounded-b-xl bg-gray-50 shadow-md py-2"
+          : "bg-white py-3"
+      } w-full`}
+    >
       {/* Menú hamburguesa */}
       <div className="flex items-center">
         <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
