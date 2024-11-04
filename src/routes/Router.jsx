@@ -7,6 +7,8 @@ import Login from "../pages/admin/auth/Login";
 import RegisterBusiness from "../pages/admin/auth/RegisterBusiness";
 import CreateOffer from "../pages/admin/CreateOffer";
 import ProtectedAdminRoute from "../components/ProtectedAdminRoute";
+import Businesses from "../pages/admin/Businesses";
+import Offers from "../pages/admin/Offers";
 
 const router = createBrowserRouter([
   {
@@ -47,7 +49,24 @@ const router = createBrowserRouter([
         ),
         errorElement: <ErrorPage />,
       },
-      // aca va a ir, Businesses, EditOffer, Offers
+      {
+        path: "/businesses",
+        element: (
+          <ProtectedAdminRoute>
+            <Businesses />
+          </ProtectedAdminRoute>
+        ),
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/offers/:businessId",
+        element: (
+          <ProtectedAdminRoute>
+            <Offers />
+          </ProtectedAdminRoute>
+        ),
+        errorElement: <ErrorPage />,
+      },
     ],
   },
 ]);

@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-//import { IoStar, IoChatbox } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Card = ({ shop }) => {
@@ -18,7 +17,7 @@ const Card = ({ shop }) => {
 
   return (
     <div className="bg-white shadow-md rounded-xl p-4 min-w-[280px] max-w-xs pb-10 relative">
-      {/* Información de la tienda */}
+      {/* Información del negocio */}
       <div className="flex items-center mb-3">
         <div className="w-12 h-12 rounded-full bg-primary-100 text-white flex items-center justify-center text-lg font-semibold">
           {nameShops.charAt(0)}
@@ -36,7 +35,7 @@ const Card = ({ shop }) => {
       {/* Imagen del producto con link al detalle */}
       <Link to={`/product/${id}`}>
         <img
-          src={images[0]}
+          src={images}
           alt={product}
           className="w-full h-44 object-cover mb-3 cursor-pointer hover:opacity-90"
         />
@@ -45,14 +44,6 @@ const Card = ({ shop }) => {
       {/* Información del producto, rating y comentarios */}
       <div className="flex justify-between items-center mb-3">
         <h4 className="font-bold text-[16px] text-titles">{product}</h4>
-        {/* <div className="flex items-center space-x-1">
-          <span className="text-yellow-500 flex items-center">
-            {star} <IoStar size={16} />
-          </span>
-          <span className="text-gray-500 flex items-center">
-            8 <IoChatbox size={16} />
-          </span>
-        </div> */}
       </div>
 
       {/* Descripción del producto */}
@@ -76,7 +67,6 @@ const Card = ({ shop }) => {
   );
 };
 
-// Validación de PropTypes
 Card.propTypes = {
   shop: PropTypes.shape({
     id: PropTypes.string.isRequired,

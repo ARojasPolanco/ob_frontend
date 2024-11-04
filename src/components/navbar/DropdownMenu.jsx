@@ -59,7 +59,7 @@ const DropdownMenu = ({ isOpen, toggleMenu }) => {
         } fixed top-0 left-0 w-64 h-auto pb-10 bg-white shadow-md z-20`}
       >
         <div className="flex flex-col items-center pt-1">
-          <img src={menuLogo} alt="Logo del Menú" className="h-36 w-auto" />
+          <img src={menuLogo} alt="Logo del Menú" className="h-24 w-auto" />
         </div>
 
         <h2 className="text-sm text-start pl-12 font-normal mt-2 mb-4 text-titles-menu">

@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative flex items-center justify-between px-4 py-3 bg-white shadow-md w-full">
+    <nav className="relative flex items-center justify-between px-4 py-3 md:py-6 bg-white shadow-md w-full">
       {/* Menú hamburguesa */}
       <div className="flex items-center">
         <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
