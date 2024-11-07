@@ -6,8 +6,21 @@ const Footer = () => {
   return (
     <footer className="bg-white py-6 px-8 flex justify-between items-start">
       <div className="w-1/2 flex flex-col space-y-2 text-sm font-poppins text-titles">
-        <p>Contacto:</p>
-        <p>LIER</p>
+        <Link
+          to="mailto:contacto@ofertasbahia.net"
+          className="hover:text-menu-color"
+        >
+          Contacto
+        </Link>
+        <Link
+          to="https://www.linkedin.com/company/lier/posts/?feedView=all"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-menu-color"
+        >
+          LIER
+        </Link>
         <p>Políticas de privacidad</p>
         <p>Términos de uso</p>
       </div>
@@ -23,24 +36,39 @@ const Footer = () => {
         </Link>
 
         <div className="flex justify-center md:justify-end w-full space-x-3 mt-2 md:mt-[-60px]">
-          <a href="https://www.instagram.com" aria-label="Instagram">
+          <Link
+            to="https://www.instagram.com/ofertas.bahia.ig/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram
               size={26}
-              className="text-white bg-primary-200 p-1 rounded-md md:rounded-xl hover:text-blue-700 md:w-[40px] md:h-[40px] md:p-2 md:size-[40px]"
+              className="text-white bg-primary-200 p-1 rounded-md md:rounded-xl hover:text-menu-color md:w-[40px] md:h-[40px] md:p-2 md:size-[40px]"
             />
-          </a>
-          <a href="https://www.linkedin.com" aria-label="LinkedIn">
+          </Link>
+          <Link
+            to="https://www.linkedin.com/company/lier/posts/?feedView=all"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedinIn
               size={26}
-              className="text-white bg-primary-200 p-1 rounded-md md:rounded-xl hover:text-blue-700 md:w-[40px] md:h-[40px] md:p-2 md:size-[40px]"
+              className="text-white bg-primary-200 p-1 rounded-md md:rounded-xl hover:text-menu-color md:w-[40px] md:h-[40px]"
             />
-          </a>
-          <a href="https://www.facebook.com" aria-label="Facebook">
+          </Link>
+          <Link
+            to="https://www.facebook.com/people/Ofertas-Bah%C3%ADa/61567290540647/"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebookF
               size={26}
-              className="text-white bg-primary-200 p-1 rounded-md md:rounded-xl hover:text-blue-700 md:w-[40px] md:h-[40px] md:p-2 md:size-[40px]"
+              className="text-white bg-primary-200 p-1 rounded-md md:rounded-xl hover:text-menu-color md:w-[40px] md:h-[40px]"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

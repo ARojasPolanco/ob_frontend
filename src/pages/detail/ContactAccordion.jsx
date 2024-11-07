@@ -11,14 +11,12 @@ const ContactAccordion = ({ contact }) => {
   };
 
   return (
-    <div className="border-b font-poppins">
+    <div className="border-b font-poppins mx-4">
       <button
         onClick={toggleAccordion}
         className="flex justify-between items-center w-full py-4"
       >
-        <span className="text-[16px] font-semibold text-gray-700">
-          Contacto
-        </span>
+        <span className="text-[16px] font-semibold text-titles">Contacto</span>
         {isOpen ? (
           <IoIosArrowUp size={24} className="text-primary-200" />
         ) : (

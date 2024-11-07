@@ -29,10 +29,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-3 transition-all duration-300 ${
-        isScrolled
-          ? "scale-95 rounded-b-xl bg-gray-50 shadow-md py-2"
-          : "bg-white py-3"
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-5 transition-all duration-300 ${
+        isScrolled ? "rounded-b-xl bg-gray-50 shadow-md py-2" : "bg-white py-3"
       } w-full`}
     >
       {/* Menú hamburguesa */}

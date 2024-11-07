@@ -20,3 +20,15 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Media query para pantallas entre 1280px y 1460px */
+@media (min-width: 1280px) and (max-width: 1460px) {
+  .custom-grid-gap {
+    gap: 1rem; /* Espaciado más pequeño para evitar superposición */
+    grid-template-columns: repeat(4, 1fr); /* Cambia el número de columnas */
+  }
+
+  .custom-card {
+    max-width: 220px; /* Ajusta el ancho máximo para evitar superposición */
+  }
+}

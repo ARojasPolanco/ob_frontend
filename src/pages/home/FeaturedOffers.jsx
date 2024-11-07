@@ -9,15 +9,16 @@ const FeaturedOffers = () => {
         Ofertas destacadas
       </h1>
 
-      <div className="hidden sm:grid sm:grid-cols-2 sm:grid-rows-4 lg:grid-cols-5 lg:grid-rows-1 md:gap-4 lg:gap-2 md:ml-8 mb-10">
+      <div className="hidden sm:grid sm:grid-cols-2 sm:grid-rows-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 lg:grid-rows-1 md:gap-6 xl:gap-6 md:ml-8 mb-10 custom-grid-gap">
         {shops.slice(0, 5).map((shop) => (
-          <Card key={shop.id} shop={shop} />
+          <Card key={shop.id} shop={shop} className="custom-card" />
         ))}
       </div>
+
       <div className="flex justify-center">
         <Link
           to="/"
-          className="hidden md:block text-center text-[16px] font-poppins font-semibold text-titles mb-6 mt-6"
+          className="hidden md:block text-center text-[16px] font-poppins font-semibold text-titles mb-12 mt-12 underline"
         >
           Ver más ofertas
         </Link>
