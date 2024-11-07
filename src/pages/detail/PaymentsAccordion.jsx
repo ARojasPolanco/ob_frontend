@@ -13,12 +13,12 @@ const PaymentsAccordion = ({ payments }) => {
   };
 
   return (
-    <div className="border-b font-poppins">
+    <div className="border-b font-poppins mx-4">
       <button
         onClick={toggleAccordion}
         className="flex justify-between items-center w-full py-4"
       >
-        <span className="text-[16px] font-semibold text-gray-700">
+        <span className="text-[16px] font-semibold text-titles">
           Medios de pago
         </span>
 
@@ -32,7 +32,7 @@ const PaymentsAccordion = ({ payments }) => {
         <div className="py-2 text-gray-600">
           <ul>
             {payments.map((payment, index) => (
-              <li key={index} className="text-gray-700">
+              <li key={index} className="text-titles">
                 {payment}
               </li>
             ))}

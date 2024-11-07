@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { FiShare2 } from "react-icons/fi";
-//import { IoStar, IoChatbox } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const DetailHeader = ({ nameShops, category, product, image }) => {
@@ -34,19 +33,13 @@ const DetailHeader = ({ nameShops, category, product, image }) => {
       <img
         src={image}
         alt={product}
-        className="w-full h-48 object-cover shadow-xl hover:opacity-75 md:h-64 lg:h-80"
+        className="w-full h-48 object-cover shadow-xl hover:opacity-75 md:h-64 lg:h-96 md:mt-4"
       />
 
-      <div className="flex justify-between items-center mb-1 mt-4">
-        <h4 className="font-bold text-[16px] text-gray-800">{product}</h4>
-        {/* <div className="flex items-center space-x-1">
-          <span className="text-yellow-500 flex items-center">
-            {star} <IoStar size={16} />
-          </span>
-          <span className="text-gray-500 flex items-center">
-            8 <IoChatbox size={16} />
-          </span>
-        </div> */}
+      <div className="flex justify-between items-center mb-1 mt-8">
+        <h4 className="font-bold text-[16px] md:text-xl text-titles">
+          {product}
+        </h4>
       </div>
     </div>
   );
@@ -57,7 +50,7 @@ DetailHeader.propTypes = {
   category: PropTypes.string.isRequired,
   product: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  //star: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default DetailHeader;
